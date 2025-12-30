@@ -1,5 +1,8 @@
 {
-  "buildCommand": "npm run build",
+  "buildCommand": "npm run build && npm run build:server",
   "outputDirectory": "dist",
-  "framework": "vite"
+  "framework": "vite",
+  "serverless": {
+    "nodejs": "20.x"
+  }
 }
