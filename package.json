@@ -1,0 +1,44 @@
+{
+  "name": "core-web-vitals-tool",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev:backend": "node --experimental-strip-types src/server.ts",
+    "dev:frontend": "vite",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "build": "vite build",
+    "test:api": "node --experimental-strip-types src/utils/test-api.ts",
+    "test:redis": "node --experimental-strip-types src/utils/test-redis.ts",
+    "migrate": "node --experimental-strip-types src/database/migrations/init.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.0.3",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@types/sqlite3": "^3.1.11",
+    "@vitejs/plugin-react": "^4.2.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "vite": "^5.0.10"
+  },
+  "dependencies": {
+    "axios": "^1.13.2",
+    "bullmq": "^5.66.4",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "ioredis": "^5.8.2",
+    "playwright": "^1.57.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sqlite3": "^5.1.7"
+  }
+}
