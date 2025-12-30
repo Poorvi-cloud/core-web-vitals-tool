@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "type": "module",
   "main": "index.js",
+  
   "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "start": "node src/server.js",
-  "preview": "vite preview"
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "build": "tsc"
   },
+
+
   "keywords": [],
   "author": "",
   "license": "ISC",
