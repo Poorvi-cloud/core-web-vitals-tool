@@ -6,11 +6,13 @@
   "scripts": {
     "dev:backend": "node --experimental-strip-types src/server.ts",
     "dev:frontend": "vite",
-    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
-    "build": "vite build",
     "test:api": "node --experimental-strip-types src/utils/test-api.ts",
     "test:redis": "node --experimental-strip-types src/utils/test-redis.ts",
-    "migrate": "node --experimental-strip-types src/database/migrations/init.ts"
+    "migrate": "node --experimental-strip-types src/database/migrations/init.ts",
+    "dev": "vite",
+    "build": "vite build",
+    "start": "node server.js",
+    "preview": "vite preview"
   },
   "keywords": [],
   "author": "",
