@@ -4,14 +4,9 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev:backend": "node --experimental-strip-types src/server.ts",
-    "dev:frontend": "vite",
-    "test:api": "node --experimental-strip-types src/utils/test-api.ts",
-    "test:redis": "node --experimental-strip-types src/utils/test-redis.ts",
-    "migrate": "node --experimental-strip-types src/database/migrations/init.ts",
     "dev": "vite",
     "build": "vite build",
-    "start": "node server.js",
+    "start": "node src/server.js",
     "preview": "vite preview"
   },
   "keywords": [],
@@ -27,6 +22,7 @@
     "@types/sqlite3": "^3.1.11",
     "@vitejs/plugin-react": "^4.2.1",
     "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3",
     "vite": "^5.0.10"
   },
